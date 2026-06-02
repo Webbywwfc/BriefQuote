@@ -1545,7 +1545,7 @@ export default function App() {
               style={{background:showHistory?"#112540":"transparent",border:"1px solid rgba(37,99,235,0.2)",color:showHistory?"#3b82f6":"#9ca3af",padding:"5px 10px",borderRadius:"6px",...mo,fontSize:"11px",cursor:"pointer",whiteSpace:"nowrap"}}>
               📋 HISTORY
             </button>
-            <button onClick={()=>{ setShowSettings(v=>!v); setShowAccount(false); setShowHistory(false); }}
+            <button onClick={()=>{ setShowSettings(v=>!v); setShowAccount(false); setShowHistory(false); window.scrollTo({top:0,behavior:'smooth'}); }}
               style={{background:showSettings?"#112540":"transparent",border:"1px solid rgba(37,99,235,0.2)",color:showSettings?"#3b82f6":"#9ca3af",padding:"5px 10px",borderRadius:"6px",...mo,fontSize:"11px",cursor:"pointer",whiteSpace:"nowrap"}}>
               ⚙ {showSettings?"HIDE":"SETTINGS"}
             </button>

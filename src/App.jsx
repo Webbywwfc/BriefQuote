@@ -207,18 +207,18 @@ CRITICAL JSON RULES:
 - Keep description text simple, avoid special characters
 - jobRef must be BQ- followed by 4 random digits, e.g. BQ-3847`;
 const TRADES = [
-  "General Builder",
   "Bricklayer",
-  "Groundworker",
-  "Plasterer",
-  "Plumber",
   "Electrician",
   "Gas Engineer",
-  "Roofer",
+  "General Builder",
+  "Groundworker",
   "Joiner / Carpenter",
-  "Tiler",
-  "Painter & Decorator",
   "Landscaper",
+  "Painter & Decorator",
+  "Plasterer",
+  "Plumber",
+  "Roofer",
+  "Tiler",
   "Other / Multi-Trade"
 ];
 

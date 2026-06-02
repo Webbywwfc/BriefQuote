@@ -66,6 +66,7 @@ Task breakdown examples:
 - Chimney rebuild: scaffold (allow separately or as line item), dismantling 4-6hrs, rebuilding 8-16hrs, flaunching and lead work 3-5hrs.
 Material price ranges: Facing bricks 500-900 per thousand, mortar/sand 7-10/bag, coping stones 8-20 per piece, DPC 1-2/m, lime mortar (for heritage work) 15-25/25kg bag.
 Quirks: Always ask about or state brick matching for extensions (matched bricks can be significantly more expensive or hard to source). Point out mortar colour matching for repointing. Scaffold cost should be noted if working above 2m.
+For repointing and small repair jobs, do NOT include skip hire unless the job is large scale (over 50sqm). Use a rubble bag allowance (50-80) instead for small repointing jobs.
 
 ── GROUNDWORKER ──
 Common jobs: drainage, foundations, excavation, concrete slabs, driveways, retaining walls.

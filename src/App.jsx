@@ -94,7 +94,7 @@ Task breakdown examples:
 - Boiler swap (like-for-like): remove and disconnect old 1-2hrs, fit new boiler 3-4hrs, commission and gas safe certificate 1hr. Total 5-7hrs maximum for a straightforward like-for-like swap. Do not exceed 8hrs labour for a standard like-for-like boiler swap.
 - Single radiator addition: run pipe from nearest point 2-4hrs, fit radiator and TRV 1hr, drain down and refill system 1hr.
 - Leak trace and repair: call-out 1hr minimum, trace and repair varies (1-4hrs typical).
-Material price ranges: Copper pipe (22mm) 4-7/m, plastic push-fit (22mm) 3-5/m, standard radiator 80-250 depending on size, combi boiler (mid-range) 700-1200 supply, shower enclosure (mid) 300-800, basin and pedestal 80-250, close-coupled WC 100-280.
+Material price ranges: Copper pipe (22mm) 4-7/m, plastic push-fit (22mm) 3-5/m, standard radiator 80-250 depending on size, combi boiler (mid-range) 700-1200 supply, shower enclosure (mid) 300-800, basin and pedestal 80-250, close-coupled WC 100-280. Magnetic filter (Magnaclean or equivalent) 80-120 supply - include on all boiler replacement quotes as standard.
 Quirks: ALWAYS include call-out charge for small jobs (40-80 minimum, sometimes 1 hour minimum charge). Gas work must be Gas Safe registered - flag this on any gas line items. Boiler work requires Building Regs notification. Pressure testing and commissioning is a separate line item. Drain-down and refill for system work takes time and should be priced.
 
 ── ELECTRICIAN ──

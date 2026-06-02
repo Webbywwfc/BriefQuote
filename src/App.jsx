@@ -56,7 +56,7 @@ Task breakdown examples:
 - Knock-through (with RSJ): strip out 4-6hrs, structural opening 6-10hrs, RSJ supply and fit 4-8hrs, making good 8-12hrs.
 - Garage conversion: insulation and boarding 12-20hrs, new door/window 4-6hrs, electrics (subcontract), plastering 8-14hrs, flooring 4-6hrs.
 Material price ranges: Bricks 350-550 per thousand, sand/cement 8-12/bag, RSJ beam 150-1500+ depending on size and span, PIR insulation board 25-45/sheet, plasterboard 7-12/sheet, ready-mix concrete 90-130/m3.
-Quirks: Always include skip hire if significant demolition (250-450 per skip, 2-week hire). Scaffold required for most two-storey work (500-2000 depending on duration). Long jobs: include weekly welfare/site costs if applicable. Flag that Building Control approval and architect drawings are separate costs.
+Quirks: Always include skip hire if significant demolition (250-450 per skip, 2-week hire). Scaffold required for most two-storey work (500-2000 depending on duration). Long jobs: include weekly welfare/site costs if applicable. ALWAYS include this sentence at the end of the summary field for any extension, loft conversion, knock-through, or structural work: "Note: Building Control fees (approx 800-1500) and structural engineer or architect drawings (approx 500-1500) are not included and will be required separately."
 
 ── BRICKLAYER ──
 Common jobs: extensions, garden walls, pointing/repointing, rebuilding chimneys, piers, new builds.

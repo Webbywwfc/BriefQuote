@@ -91,7 +91,7 @@ Quirks: Always flag artex asbestos risk if pre-2000 property (testing 50-150 ext
 Common jobs: bathroom installation, boiler service/replacement, leak repairs, new radiators, pipework alterations, kitchen plumbing.
 Task breakdown examples:
 - Full bathroom installation (remove and replace): strip out 4-6hrs, first fix pipework 6-10hrs, board and tile (usually subcontracted or allow separately), second fix (fit suite, shower, taps) 6-10hrs, test and commission 1-2hrs. Total plumbing: 18-28hrs.
-- Boiler swap (like-for-like): remove and disconnect old 2-3hrs, fit new boiler 4-6hrs, flue modification if needed 1-2hrs, commission and gas safe certificate 1-2hrs.
+- Boiler swap (like-for-like): remove and disconnect old 1-2hrs, fit new boiler 3-4hrs, commission and gas safe certificate 1hr. Total 5-7hrs maximum for a straightforward like-for-like swap. Do not exceed 8hrs labour for a standard like-for-like boiler swap.
 - Single radiator addition: run pipe from nearest point 2-4hrs, fit radiator and TRV 1hr, drain down and refill system 1hr.
 - Leak trace and repair: call-out 1hr minimum, trace and repair varies (1-4hrs typical).
 Material price ranges: Copper pipe (22mm) 4-7/m, plastic push-fit (22mm) 3-5/m, standard radiator 80-250 depending on size, combi boiler (mid-range) 700-1200 supply, shower enclosure (mid) 300-800, basin and pedestal 80-250, close-coupled WC 100-280.

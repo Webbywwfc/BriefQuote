@@ -85,7 +85,7 @@ Task breakdown examples:
 - Patch repair (1sqm): cut out and key 0.5hr, undercoat and skim 1-2hrs.
 - Artex removal (average room ceiling): test for asbestos first (flag this), chemical treatment and scrape 4-8hrs, skim 3-5hrs.
 Material price ranges: Bonding coat 12-16/25kg bag, finish plaster 10-14/25kg bag, plasterboard (12.5mm standard) 7-12/sheet, beading 1-3 per length, PVA 8-14/5L.
-Quirks: Always flag artex asbestos risk if pre-2000 property (testing 50-150 extra, removal if positive is a specialist job entirely separate). New plaster must dry before decorating (typically 4-6 weeks). Rooms with lots of angles and reveals take significantly longer.
+Quirks: Always flag artex asbestos risk if pre-2000 property (testing 50-150 extra, removal if positive is a specialist job entirely separate). New plaster must dry before decorating (typically 4-6 weeks). Rooms with lots of angles and reveals take significantly longer. Skip hire for a full re-plaster: 6-8 yard skip is appropriate for plaster waste. Price at 350-500 for a standard 2 week hire outside London, not higher.
 
 ── PLUMBER ──
 Common jobs: bathroom installation, boiler service/replacement, leak repairs, new radiators, pipework alterations, kitchen plumbing.

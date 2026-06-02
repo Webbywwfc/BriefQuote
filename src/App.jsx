@@ -1537,7 +1537,7 @@ export default function App() {
             </div>
           </div>
           <div style={{display:"flex",gap:"6px",alignItems:"center",flexWrap:"wrap",justifyContent:"flex-end"}}>
-            <button onClick={()=>{ setShowAccount(v=>!v); setShowHistory(false); setShowSettings(false); }}
+            <button onClick={()=>{ setShowAccount(v=>!v); setShowHistory(false); setShowSettings(false); window.scrollTo({top:0,behavior:'smooth'}); }}
               style={{background:showAccount?"#112540":"transparent",border:"1px solid rgba(37,99,235,0.2)",color:showAccount?"#3b82f6":"#9ca3af",padding:"5px 10px",borderRadius:"6px",...mo,fontSize:"11px",cursor:"pointer",whiteSpace:"nowrap"}}>
               👤 ACCOUNT
             </button>

@@ -252,7 +252,7 @@ const HISTORY_KEY = "briefquote_history";
 const QUOTE_COUNT_KEY = "briefquote_quote_count";
 const EMAIL_KEY = "briefquote_email";
 const PRO_KEY = "briefquote_pro";
-const FREE_LIMIT = 3;
+const FREE_LIMIT = 5;
 
 // ── CHANGED: replaced STRIPE_URL constant with startCheckout function ──
 async function startCheckout(email) {

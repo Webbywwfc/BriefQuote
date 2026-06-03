@@ -181,6 +181,7 @@ OUTPUT FORMAT RULES
 - Never make the quote look padded - only include line items that are genuinely part of the job
 - If CIS is mentioned: do not adjust labour rates. CIS deduction is shown separately on the quote. Note: VAT domestic reverse charge may apply for VAT-registered subcontractors under CIS - recommend client checks with their accountant.
 - If the job is vague, make reasonable assumptions and note them in the summary
+- For unit fields use only these values: hrs, day, item, m, m2, m3, lot, set, bag, roll. Never use "allowance" or any word longer than 6 characters in the unit field.
 
 Return ONLY valid JSON with this exact structure, no other text before or after:
 {

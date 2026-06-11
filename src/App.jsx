@@ -1866,7 +1866,6 @@ export default function App() {
   onSaveTerms={(terms)=>{ setDefaultTerms(terms); saveSettings({companyName, defaultTerms:terms, labourRate, vatRegistered, tradeType}); }}
   onReset={reset}
 />
-          />
         )}
 
         {!showHistory && step==="error"&&(

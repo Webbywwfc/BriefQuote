@@ -945,11 +945,16 @@ const [showRates, setShowRates] = useState(true);
             onBlur={e=>{e.target.style.borderBottomColor="rgba(96,165,250,0.2)"; e.target.style.color="#6b7280";}}
           />
         </div>
-       <div className="no-print" style={{marginTop:"10px",display:"flex",alignItems:"center",gap:"10px"}}>
-  <span style={{fontSize:"11px",color:"#6b7280",...mo}}>VIEW:</span>
-  <button onClick={()=>setShowRates(v=>!v)} style={{background:showRates?"#2563eb22":"#065f4622",border:`1px solid ${showRates?"#2563eb55":"#34d39955"}`,color:showRates?"#60a5fa":"#34d399",borderRadius:"4px",padding:"2px 10px",fontSize:"11px",cursor:"pointer",...mo}}>
-    {showRates?"FULL BREAKDOWN":"CLIENT VIEW"}
-  </button>
+       <div className="no-print" style={{marginTop:"10px"}}>
+  <div style={{display:"flex",alignItems:"center",gap:"10px",marginBottom:"4px"}}>
+    <span style={{fontSize:"11px",color:"#6b7280",...mo}}>👁 VIEW:</span>
+    <button onClick={()=>setShowRates(v=>!v)} style={{background:showRates?"#2563eb33":"#065f4633",border:`1px solid ${showRates?"#2563eb":"#34d399"}`,color:showRates?"#60a5fa":"#34d399",borderRadius:"4px",padding:"3px 12px",fontSize:"11px",cursor:"pointer",...mo,fontWeight:700}}>
+      {showRates?"FULL BREAKDOWN ▾":"CLIENT VIEW ▾"}
+    </button>
+  </div>
+  <div style={{fontSize:"10px",color:"#4b5563",...mo,letterSpacing:"0.06em"}}>
+    ✦ SWITCH TO CLIENT VIEW TO HIDE RATES BEFORE SENDING
+  </div>
 </div>
         <div className="no-print" style={{marginTop:"10px",fontSize:"10px",color:"#2563eb",...mo,letterSpacing:"0.06em"}}>
           ✎ TAP ANY FIELD ABOVE TO EDIT

@@ -1495,7 +1495,7 @@ export default function App() {
       const res = await fetch('/api/generate', {
         method:"POST",
         headers:{"content-type":"application/json"},
-        body:JSON.stringify({model:"claude-sonnet-4-5",max_tokens:4000,system:SYSTEM_PROMPT,messages:[{role:"user",content:msg}]})
+        body:JSON.stringify({model:"claude-sonnet-4-5",max_tokens:4000,temperature:0.2,system:SYSTEM_PROMPT,messages:[{role:"user",content:msg}]})
       });
       const data = await res.json();
       if (!res.ok) { setErrorMsg(`API Error ${res.status}: ${data?.error?.message||JSON.stringify(data)}`); setStep("error"); return; }

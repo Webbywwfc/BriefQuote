@@ -708,7 +708,7 @@ function EditableCell({ value, onChange, isQty=false }) {
   );
 }
 
-function QuoteResult({ quote:init, clientInfo, companyName, defaultTerms, vatRegistered=true, cisRegistered=false, cisRate=20, historyId, jobDesc, onQuoteChange, onSaveTerms, onReset }) {
+function QuoteResult({ quote:init, clientInfo, companyName, logo="", defaultTerms, vatRegistered=true, cisRegistered=false, cisRate=20, historyId, jobDesc, onQuoteChange, onSaveTerms, onReset }) {
   const initQ = {...init, notes: defaultTerms || init.notes};
   if (!vatRegistered) { initQ.vatAmount = 0; initQ.grandTotal = initQ.subtotal; }
   const [q, setQ] = useState(initQ);
@@ -843,6 +843,7 @@ const [showRates, setShowRates] = useState(true);
     </style></head><body>
     <div class="header">
       <div>
+        ${logo?`<img src="${logo}" style="height:80px;object-fit:contain;margin-bottom:8px;max-width:200px;display:block"/>`:""} 
         ${companyName?`<div style="font-size:18px;font-weight:800;margin-bottom:8px">${companyName}</div>`:""}
         <div class="badge">QUOTE ${q.jobRef}</div>
         <h1>${q.jobTitle}</h1>
@@ -899,6 +900,7 @@ const [showRates, setShowRates] = useState(true);
       <div style={{background:"linear-gradient(135deg,#0d1e35,#091424)",border:"1px solid rgba(37,99,235,0.2)",borderTop:"3px solid #2563eb",borderRadius:"8px",padding:"22px",marginBottom:"14px"}}>
         <div style={{display:"flex",justifyContent:"space-between",alignItems:"flex-start",flexWrap:"wrap",gap:"12px"}}>
           <div style={{flex:1,minWidth:0}}>
+            {logo&&<img src={logo} style={{height:"80px",objectFit:"contain",marginBottom:"8px",maxWidth:"200px"}}/>} 
             {companyName&&<div style={{color:"#fff",fontSize:"16px",fontWeight:700,marginBottom:"4px"}}>{companyName}</div>}
             <div style={{display:"flex",alignItems:"center",gap:"6px",marginBottom:"8px"}}>
               <span style={{...am,...mo,fontSize:"11px",flexShrink:0}}>QUOTE</span>
@@ -1852,16 +1854,18 @@ export default function App() {
 
         {!showHistory && step==="result"&&quote&&(
           <QuoteResult
-            quote={quote}
-            clientInfo={clientInfo}
-            companyName={companyName}
-            defaultTerms={defaultTerms}
-            vatRegistered={vatRegistered}
-            historyId={currentHistoryId}
-            jobDesc={jobDesc}
-            onQuoteChange={(updatedQuote)=>setQuote(updatedQuote)}
-            onSaveTerms={(terms)=>{ setDefaultTerms(terms); saveSettings({companyName, defaultTerms:terms, labourRate, vatRegistered, tradeType}); }}
-            onReset={reset}
+  quote={quote}
+  clientInfo={clientInfo}
+  companyName={companyName}
+  logo={logo}
+  defaultTerms={defaultTerms}
+  vatRegistered={vatRegistered}
+  historyId={currentHistoryId}
+  jobDesc={jobDesc}
+  onQuoteChange={(updatedQuote)=>setQuote(updatedQuote)}
+  onSaveTerms={(terms)=>{ setDefaultTerms(terms); saveSettings({companyName, defaultTerms:terms, labourRate, vatRegistered, tradeType}); }}
+  onReset={reset}
+/>
           />
         )}
 

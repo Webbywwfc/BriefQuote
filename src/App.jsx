@@ -1413,6 +1413,7 @@ export default function App() {
   const [companyName, setCompanyName] = useState(saved.companyName||"");
   const [defaultTerms, setDefaultTerms] = useState(saved.defaultTerms||DEFAULT_TERMS);
   const [labourRate, setLabourRate] = useState(saved.labourRate||"");
+  const [logo, setLogo] = useState(saved.logo||"");
   const [vatRegistered, setVatRegistered] = useState(saved.vatRegistered !== false);
   const [cisRegistered, setCisRegistered] = useState(saved.cisRegistered===true);
   const [cisRate, setCisRate] = useState(saved.cisRate||20);
@@ -1461,7 +1462,7 @@ export default function App() {
   }, []);
 
   useEffect(()=>{
-    saveSettings({companyName, defaultTerms, labourRate, vatRegistered, tradeType, cisRegistered, cisRate});
+    saveSettings({companyName, defaultTerms, labourRate, vatRegistered, tradeType, cisRegistered, cisRate, logo});
   },[companyName, defaultTerms, labourRate, vatRegistered, tradeType, cisRegistered, cisRate]);
 
   const generate = async () => {

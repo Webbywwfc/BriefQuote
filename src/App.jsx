@@ -718,7 +718,7 @@ function QuoteResult({ quote:init, clientInfo, companyName, defaultTerms, vatReg
   const [copied, setCopied] = useState(false);
   const [showEmail, setShowEmail] = useState(false);
   const [saved, setSaved] = useState(false);
-
+const [showRates, setShowRates] = useState(true);
   const handleSave = () => {
     if (historyId) {
       updateInHistory(historyId, q, clientInfo, companyName, jobDesc);
@@ -984,13 +984,13 @@ function QuoteResult({ quote:init, clientInfo, companyName, defaultTerms, vatReg
                     onFocus={e=>e.target.style.borderBottomColor="#3b82f6"}
                     onBlur={e=>e.target.style.borderBottomColor="rgba(96,165,250,0.2)"}
                   />
-                <input value={item.unit} onChange={e=>updateUnit(ii,e.target.value)}
-                    style={{background:"transparent",border:"none",borderBottom:"1px dashed rgba(96,165,250,0.2)",color:"#94a3b8",fontSize:"11px",fontFamily:"'DM Mono', monospace",textAlign:"right",width:"100%",padding:"2px"}}
-                    onFocus={e=>e.target.style.borderBottomColor="#3b82f6"}
-                    onBlur={e=>e.target.style.borderBottomColor="rgba(96,165,250,0.2)"}
-                  />
-                  <div style={{textAlign:"right"}}><EditableCell value={item.qty} isQty onChange={v=>updateItem(ii,"qty",v)}/></div>
-                  <div style={{textAlign:"right"}}><EditableCell value={item.rate} onChange={v=>updateItem(ii,"rate",v)}/></div>
+              {showRates && <input value={item.unit} onChange={e=>updateUnit(ii,e.target.value)}
+    style={{background:"transparent",border:"none",borderBottom:"1px dashed rgba(96,165,250,0.2)",color:"#94a3b8",fontSize:"11px",fontFamily:"'DM
+    onFocus={e=>e.target.style.borderBottomColor="#3b82f6"}
+    onBlur={e=>e.target.style.borderBottomColor="rgba(96,165,250,0.2)"}
+/>}
+                  {showRates && <div style={{textAlign:"right"}}><EditableCell value={item.qty} isQty onChange={v=>updateItem(ii,"qty",v)}/></div>}
+{showRates && <div style={{textAlign:"right"}}><EditableCell value={item.rate} onChange={v=>updateItem(ii,"rate",v)}/></div>}
                   <div style={{textAlign:"right"}}><EditableCell value={item.total} onChange={v=>updateItem(ii,"total",v)}/></div>
                   <button className="no-print" onClick={()=>deleteItem(ii)}
                     style={{background:"none",border:"none",color:"#4b5563",cursor:"pointer",fontSize:"14px",padding:0,textAlign:"center",lineHeight:1}}
@@ -1010,22 +1010,23 @@ function QuoteResult({ quote:init, clientInfo, companyName, defaultTerms, vatReg
                       onMouseLeave={e=>e.currentTarget.style.color="#4b5563"}>✕</button>
                   </div>
                   <div style={{display:"flex",alignItems:"center",gap:"12px",flexWrap:"wrap"}}>
-                    <div style={{display:"flex",alignItems:"center",gap:"4px"}}>
-                      <span style={{color:"#4b5563",fontSize:"10px",...mo}}>UNIT</span>
-                      <input value={item.unit} onChange={e=>updateUnit(ii,e.target.value)}
-                        style={{background:"transparent",border:"none",borderBottom:"1px dashed rgba(96,165,250,0.2)",color:"#60a5fa",fontSize:"11px",fontFamily:"'DM Mono', monospace",width:"40px",padding:"1px 2px",textAlign:"center"}}
-                        onFocus={e=>e.target.style.borderBottomColor="#3b82f6"}
-                        onBlur={e=>e.target.style.borderBottomColor="rgba(96,165,250,0.2)"}
-                      />
+                  {showRates && <div style={{display:"flex",alignItems:"center",gap:"4px"}}>
+  <span style={{color:"#4b5563",fontSize:"10px",...mo}}>UNIT</span>
+  <input value={item.unit} onChange={e=>updateUnit(ii,e.target.value)}
+    style={{background:"transparent",border:"none",borderBottom:"1px dashed rgba(96,165,250,0.2)",color:"#60a5fa",fontSize:"11px",fontFamily:"'DM Mono', monospace",width:"40px",padding:"1px 2px",textAlign:"center"}}
+    onFocus={e=>e.target.style.borderBottomColor="#3b82f6"}
+    onBlur={e=>e.target.style.borderBottomColor="rgba(96,165,250,0.2)"}
+  />
+</div>}
                     </div>
-                    <div style={{display:"flex",alignItems:"center",gap:"4px"}}>
-                      <span style={{color:"#4b5563",fontSize:"10px",...mo}}>QTY</span>
-                      <EditableCell value={item.qty} isQty onChange={v=>updateItem(ii,"qty",v)}/>
-                    </div>
-                    <div style={{display:"flex",alignItems:"center",gap:"4px"}}>
-                      <span style={{color:"#4b5563",fontSize:"10px",...mo}}>RATE</span>
-                      <EditableCell value={item.rate} onChange={v=>updateItem(ii,"rate",v)}/>
-                    </div>
+                   {showRates && <div style={{display:"flex",alignItems:"center",gap:"4px"}}>
+  <span style={{color:"#4b5563",fontSize:"10px",...mo}}>QTY</span>
+  <EditableCell value={item.qty} isQty onChange={v=>updateItem(ii,"qty",v)}/>
+</div>}
+                      {showRates && <div style={{display:"flex",alignItems:"center",gap:"4px"}}>
+  <span style={{color:"#4b5563",fontSize:"10px",...mo}}>RATE</span>
+  <EditableCell value={item.rate} onChange={v=>updateItem(ii,"rate",v)}/>
+</div>}
                     <div style={{display:"flex",alignItems:"center",gap:"4px",marginLeft:"auto"}}>
                       <span style={{color:"#4b5563",fontSize:"10px",...mo}}>TOTAL</span>
                       <EditableCell value={item.total} onChange={v=>updateItem(ii,"total",v)}/>

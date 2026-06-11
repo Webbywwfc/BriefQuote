@@ -949,6 +949,12 @@ function QuoteResult({ quote:init, clientInfo, companyName, defaultTerms, vatReg
             onBlur={e=>{e.target.style.borderBottomColor="rgba(96,165,250,0.2)"; e.target.style.color="#6b7280";}}
           />
         </div>
+       <div className="no-print" style={{marginTop:"10px",display:"flex",alignItems:"center",gap:"10px"}}>
+  <span style={{fontSize:"11px",color:"#6b7280",...mo}}>VIEW:</span>
+  <button onClick={()=>setShowRates(v=>!v)} style={{background:showRates?"#2563eb22":"#065f4622",border:`1px solid ${showRates?"#2563eb55":"#34d39955"}`,color:showRates?"#60a5fa":"#34d399",borderRadius:"4px",padding:"2px 10px",fontSize:"11px",cursor:"pointer",...mo}}>
+    {showRates?"FULL BREAKDOWN":"CLIENT VIEW"}
+  </button>
+</div>
         <div className="no-print" style={{marginTop:"10px",fontSize:"10px",color:"#2563eb",...mo,letterSpacing:"0.06em"}}>
           ✎ TAP ANY FIELD ABOVE TO EDIT
         </div>
@@ -956,7 +962,7 @@ function QuoteResult({ quote:init, clientInfo, companyName, defaultTerms, vatReg
 
       <div style={{background:"#091424",border:"1px solid rgba(37,99,235,0.2)",borderRadius:"8px",overflow:"hidden",marginBottom:"14px"}}>
         <div style={{display:"grid",gridTemplateColumns:"1fr 48px 60px 70px 70px 24px",padding:"9px 14px",background:"#112540",borderBottom:"1px solid rgba(37,99,235,0.15)"}}>
-          {["DESCRIPTION","UNIT","QTY","RATE","TOTAL",""].map((h,i)=>(
+          {["DESCRIPTION",...(showRates?["UNIT","QTY","RATE"]:[]),"TOTAL",""].map((h,i)=>(
             <div key={i} style={{color:"#6b7280",fontSize:"10px",...mo,textAlign:i===0?"left":"right"}}>{h}</div>
           ))}
         </div>

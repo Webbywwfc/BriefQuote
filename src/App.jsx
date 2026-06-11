@@ -1578,6 +1578,27 @@ export default function App() {
               <input value={companyName} onChange={e=>setCompanyName(e.target.value)} placeholder="e.g. ABC Construction Ltd" style={inp}/>
             </div>
             <div style={{marginBottom:"14px"}}>
+  <label style={lbl}>COMPANY LOGO</label>
+  <div style={{display:"flex",alignItems:"center",gap:"12px",flexWrap:"wrap"}}>
+    {logo&&<img src={logo} style={{height:"60px",objectFit:"contain",borderRadius:"4px",background:"#fff",padding:"4px"}}/>}
+    <label style={{background:"#112540",border:"1px solid rgba(96,165,250,0.3)",color:"#60a5fa",borderRadius:"8px",padding:"8px 14px",fontSize:"11px",cursor:"pointer",fontFamily:"'DM Mono', monospace",fontWeight:700}}>
+      {logo?"CHANGE LOGO":"UPLOAD LOGO"}
+      <input type="file" accept="image/*" style={{display:"none"}} onChange={e=>{
+        const file = e.target.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = ev => { setLogo(ev.target.result); saveSettings({companyName,defaultTerms,labourRate,vatRegistered,tradeType,cisRegistered,cisRate,logo:ev.target.result}); };
+        reader.readAsDataURL(file);
+      }}/>
+    </label>
+    {logo&&<button onClick={()=>{ setLogo(""); saveSettings({companyName,defaultTerms,labourRate,vatRegistered,tradeType,cisRegistered,cisRate,logo:""}); }}
+      style={{background:"transparent",border:"1px solid rgba(37,99,235,0.2)",color:"#6b7280",borderRadius:"8px",padding:"8px 14px",fontSize:"11px",cursor:"pointer",fontFamily:"'DM Mono', monospace"}}>
+      REMOVE
+    </button>}
+  </div>
+  <div style={{color:"#6b7280",fontSize:"11px",fontFamily:"'DM Mono', monospace",marginTop:"6px"}}>PNG or JPG recommended. Will appear on all quotes and PDFs.</div>
+</div>
+            <div style={{marginBottom:"14px"}}>
               <label style={lbl}>YOUR EMAIL</label>
               <div style={{display:"flex",gap:"8px"}}>
                 <input type="email" value={userEmail} onChange={e=>setUserEmail(e.target.value)} placeholder="your@email.com" style={{...inp,width:"280px"}}/>

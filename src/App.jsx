@@ -869,9 +869,9 @@ const [showRates, setShowRates] = useState(true);
       </tr></thead>
       <tbody>
         ${catRows}
-        <tr class="totals"><td colspan="4" style="text-align:right;color:#666">Subtotal</td><td style="text-align:right;color:#666">£${Number(q.subtotal).toFixed(2)}</td></tr>
-        <tr class="totals"><td colspan="4" style="text-align:right;color:#666">VAT @ 20%</td><td style="text-align:right;color:#666">£${Number(q.vatAmount).toFixed(2)}</td></tr>
-        <tr class="total-final"><td colspan="4" style="text-align:right">TOTAL INC. VAT</td><td style="text-align:right;font-size:18px">£${Number(q.grandTotal).toLocaleString("en-GB",{minimumFractionDigits:2})}</td></tr>
+        <tr class="totals"><td colspan="${showRates?4:1}" style="text-align:right;color:#666">Subtotal</td><td style="text-align:right;color:#666">£${Number(q.subtotal).toFixed(2)}</td></tr>
+<tr class="totals"><td colspan="${showRates?4:1}" style="text-align:right;color:#666">VAT @ 20%</td><td style="text-align:right;color:#666">£${Number(q.vatAmount).toFixed(2)}</td></tr>
+<tr class="total-final"><td colspan="${showRates?4:1}" style="text-align:right">TOTAL INC. VAT</td><td style="text-align:right;font-size:18px">£${Number(q.grandTotal).toLocaleString("en-GB",{minimumFractionDigits:2})}</td></tr>
       </tbody>
     </table>
     <div class="notes">${q.notes}</div>

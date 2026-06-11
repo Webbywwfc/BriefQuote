@@ -961,7 +961,7 @@ function QuoteResult({ quote:init, clientInfo, companyName, defaultTerms, vatReg
       </div>
 
       <div style={{background:"#091424",border:"1px solid rgba(37,99,235,0.2)",borderRadius:"8px",overflow:"hidden",marginBottom:"14px"}}>
-        <div style={{display:"grid",gridTemplateColumns:"1fr 48px 60px 70px 70px 24px",padding:"9px 14px",background:"#112540",borderBottom:"1px solid rgba(37,99,235,0.15)"}}>
+        <div style={{display:"grid",gridTemplateColumns:showRates?"1fr 48px 60px 70px 70px 24px":"1fr 70px 24px",padding:"9px 14px",background:"#112540",borderBottom:"1px solid rgba(37,99,235,0.15)"}}>
           {["DESCRIPTION",...(showRates?["UNIT","QTY","RATE"]:[]),"TOTAL",""].map((h,i)=>(
             <div key={i} style={{color:"#6b7280",fontSize:"10px",...mo,textAlign:i===0?"left":"right"}}>{h}</div>
           ))}

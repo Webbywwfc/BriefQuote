@@ -1432,6 +1432,7 @@ export default function App() {
   const [quote, setQuote] = useState(null);
   const [currentHistoryId, setCurrentHistoryId] = useState(null);
   const [errorMsg, setErrorMsg] = useState("");
+  const [showRates, setShowRates] = useState(true);
 
   useEffect(()=>{
     const s = document.createElement("style");

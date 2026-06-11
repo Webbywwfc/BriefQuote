@@ -821,9 +821,7 @@ const [showRates, setShowRates] = useState(true);
       ${q.lineItems.filter(i=>i.category===cat).map(item=>`
         <tr>
           <td style="padding:10px 12px;border-bottom:1px solid #eee;font-size:13px">${item.description}</td>
-          <td style="padding:10px 12px;border-bottom:1px solid #eee;font-size:13px;text-align:center">${item.unit}</td>
-          <td style="padding:10px 12px;border-bottom:1px solid #eee;font-size:13px;text-align:right">${item.qty}</td>
-          <td style="padding:10px 12px;border-bottom:1px solid #eee;font-size:13px;text-align:right">£${Number(item.rate).toFixed(2)}</td>
+          ${showRates ? `<td style="padding:10px 12px;border-bottom:1px solid #eee;font-size:13px;text-align:center">${item.unit}</td><td style="padding:10px 12px;border-bottom:1px solid #eee;font-size:13px;text-align:right">${item.qty}</td><td style="padding:10px 12px;border-bottom:1px solid #eee;font-size:13px;text-align:right">£${Number(item.rate).toFixed(2)}</td>` : ''}
           <td style="padding:10px 12px;border-bottom:1px solid #eee;font-size:13px;text-align:right;font-weight:600">£${Number(item.total).toFixed(2)}</td>
         </tr>`).join("")}`).join("");
 
@@ -865,10 +863,8 @@ const [showRates, setShowRates] = useState(true);
     <p style="color:#555;font-size:13px;line-height:1.6">${q.summary}</p>
     <table>
       <thead><tr>
-        <th style="width:42%">Description</th>
-        <th style="text-align:center">Unit</th>
-        <th style="text-align:right">Qty</th>
-        <th style="text-align:right">Rate</th>
+       <th style="width:42%">Description</th>
+        ${showRates ? `<th style="text-align:center">Unit</th><th style="text-align:right">Qty</th><th style="text-align:right">Rate</th>` : ''}
         <th style="text-align:right">Total</th>
       </tr></thead>
       <tbody>
@@ -1010,7 +1006,7 @@ const [showRates, setShowRates] = useState(true);
                       onMouseLeave={e=>e.currentTarget.style.color="#4b5563"}>✕</button>
                   </div>
                   <div style={{display:"flex",alignItems:"center",gap:"12px",flexWrap:"wrap"}}>
-                  {showRates && <div style={{display:"flex",alignItems:"center",gap:"4px"}}>
+               {showRates && <div style={{display:"flex",alignItems:"center",gap:"4px"}}>
   <span style={{color:"#4b5563",fontSize:"10px",...mo}}>UNIT</span>
   <input value={item.unit} onChange={e=>updateUnit(ii,e.target.value)}
     style={{background:"transparent",border:"none",borderBottom:"1px dashed rgba(96,165,250,0.2)",color:"#60a5fa",fontSize:"11px",fontFamily:"'DM Mono', monospace",width:"40px",padding:"1px 2px",textAlign:"center"}}
@@ -1018,20 +1014,18 @@ const [showRates, setShowRates] = useState(true);
     onBlur={e=>e.target.style.borderBottomColor="rgba(96,165,250,0.2)"}
   />
 </div>}
-                    </div>
-                   {showRates && <div style={{display:"flex",alignItems:"center",gap:"4px"}}>
+{showRates && <div style={{display:"flex",alignItems:"center",gap:"4px"}}>
   <span style={{color:"#4b5563",fontSize:"10px",...mo}}>QTY</span>
   <EditableCell value={item.qty} isQty onChange={v=>updateItem(ii,"qty",v)}/>
 </div>}
-                      {showRates && <div style={{display:"flex",alignItems:"center",gap:"4px"}}>
+{showRates && <div style={{display:"flex",alignItems:"center",gap:"4px"}}>
   <span style={{color:"#4b5563",fontSize:"10px",...mo}}>RATE</span>
   <EditableCell value={item.rate} onChange={v=>updateItem(ii,"rate",v)}/>
 </div>}
-                    <div style={{display:"flex",alignItems:"center",gap:"4px",marginLeft:"auto"}}>
-                      <span style={{color:"#4b5563",fontSize:"10px",...mo}}>TOTAL</span>
-                      <EditableCell value={item.total} onChange={v=>updateItem(ii,"total",v)}/>
-                    </div>
-                  </div>
+<div style={{display:"flex",alignItems:"center",gap:"4px",marginLeft:"auto"}}>
+  <span style={{color:"#4b5563",fontSize:"10px",...mo}}>TOTAL</span>
+  <EditableCell value={item.total} onChange={v=>updateItem(ii,"total",v)}/>
+</div>
                 </div>
               </div>
             ))}

@@ -1016,18 +1016,17 @@ const [showRates, setShowRates] = useState(true);
                     {showRates && <div style={{display:"flex",alignItems:"center",gap:"4px"}}>
                       <span style={{color:"#4b5563",fontSize:"10px",...mo}}>RATE</span>
                       <EditableCell value={item.rate} onChange={v=>updateItem(ii,"rate",v)}/>
-                    </div>}
-                   <div style={{display:"flex",alignItems:"center",gap:"4px",marginLeft:"auto"}}>
+                   </div>}
+                    <div style={{display:"flex",alignItems:"center",gap:"4px",marginLeft:"auto"}}>
                       <span style={{color:"#4b5563",fontSize:"10px",...mo}}>TOTAL</span>
                       <EditableCell value={item.total} onChange={v=>updateItem(ii,"total",v)}/>
-                    </div>
-                  </div>
+                   </div>
                   </div>
                 </div>
               </div>
-            ))}
-          </div>
-        ))}
+              ))}
+            </div>
+          ))}
 
         <div className="no-print" style={{padding:"10px 14px",borderTop:"1px solid rgba(37,99,235,0.1)"}}>
           <button onClick={addCategory}

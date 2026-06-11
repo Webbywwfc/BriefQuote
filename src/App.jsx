@@ -1019,11 +1019,10 @@ const [showRates, setShowRates] = useState(true);
                       <EditableCell value={item.rate} onChange={v=>updateItem(ii,"rate",v)}/>
                     </div>}
 <div style={{display:"flex",alignItems:"center",gap:"4px",marginLeft:"auto"}}>
-  <span style={{color:"#4b5563",fontSize:"10px",...mo}}>TOTAL</span>
-  <EditableCell value={item.total} onChange={v=>updateItem(ii,"total",v)}/>
-</div>
-                </div>
-              </div>
+                      <span style={{color:"#4b5563",fontSize:"10px",...mo}}>TOTAL</span>
+                      <EditableCell value={item.total} onChange={v=>updateItem(ii,"total",v)}/>
+                    </div>
+                  </div>
             ))}
           </div>
         ))}

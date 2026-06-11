@@ -978,7 +978,7 @@ function QuoteResult({ quote:init, clientInfo, companyName, defaultTerms, vatReg
             </div>
             {q.lineItems.map((item,ii)=>item.category!==cat?null:(
               <div key={ii}>
-                <div className="line-item-desktop" style={{gridTemplateColumns:"1fr 48px 60px 70px 70px 24px",padding:"9px 14px",borderBottom:"1px solid rgba(37,99,235,0.1)",alignItems:"center",gap:"4px"}}>
+                <div className="line-item-desktop" style={{gridTemplateColumns:showRates?"1fr 48px 60px 70px 70px 24px":"1fr 70px 24px",padding:"9px 14px",borderBottom:"1px solid rgba(37,99,235,0.1)",alignItems:"center",gap:"4px"}}>
                   <input value={item.description} onChange={e=>updateDesc(ii,e.target.value)}
                     style={{background:"transparent",border:"none",borderBottom:"1px dashed rgba(96,165,250,0.2)",color:"#f1f5f9",fontSize:"13px",padding:"2px 4px",fontFamily:"'DM Sans', sans-serif",width:"100%"}}
                     onFocus={e=>e.target.style.borderBottomColor="#3b82f6"}

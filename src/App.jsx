@@ -1368,7 +1368,7 @@ function PaywallModal({ onClose, onUnlock, userEmail }) {
             "All trades & accurate UK rates",
             "PDF export & cover emails",
             "Quote history & status tracking",
-            "VAT toggle & CIS support (coming soon)",
+            "VAT toggle & CIS deduction support",
           ].map((f,i)=>(
             <div key={i} style={{display:"flex",alignItems:"center",gap:"10px",marginBottom:"10px"}}>
               <span style={{color:"#60a5fa",fontSize:"13px",fontWeight:700,flexShrink:0}}>✓</span>

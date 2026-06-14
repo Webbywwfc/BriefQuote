@@ -25,16 +25,16 @@ LABOUR RATE RANGES (base, non-London)
 - Bricklayer: 28-38/hr
 - Groundworker: 25-35/hr
 - Plasterer: 28-38/hr
--Plumber: 45-65/hr
--Electrician: 50-70/hr
--Gas Engineer: 50-70/hr
+- Plumber: 45-65/hr
+- Electrician: 50-70/hr
+- Gas Engineer: 50-70/hr
 - Roofer: 30-45/hr
 - Joiner / Carpenter: 28-40/hr
 - Tiler: 25-35/hr
 - Painter and Decorator: 20-30/hr
 - Landscaper: 20-30/hr
 Price at the mid point of all ranges. Do not underquote — tradesmen can edit any figure after generation. An accurate mid-market quote is more useful than a conservative one.
-If the user provides their own labour rate, use that EXACT rate for ALL labour lines.
+CRITICAL: If the user provides their own labour rate, you MUST use that EXACT rate for every single labour line item without exception. Never deviate from the provided rate. Ignore all labour rate ranges above when a rate is provided.
 If the user provides estimated hours, use that EXACT figure for total labour quantity.
 
 ════════════════════════════════════════
@@ -50,127 +50,152 @@ TRADE-SPECIFIC KNOWLEDGE
 ════════════════════════════════════════
 
 ── GENERAL BUILDER ──
-Common jobs: extensions, loft conversions, garage conversions, knock-throughs, new builds, structural work.
+Common jobs: extensions, loft conversions, garage conversions, knock-throughs, new builds, structural work, underpinning, damp proofing, internal wall insulation, barn conversions.
 Task breakdown examples:
 - Single storey extension (4x4m): demolition/strip out 4-8hrs, foundations/groundworks 16-24hrs, brickwork walls 24-40hrs, roof structure 8-16hrs, roofing 8-12hrs, windows/doors 4-8hrs, internal plastering 12-20hrs, first fix 8hrs, second fix 6hrs, decoration 12-20hrs. Total 100-160hrs for a full turn-key 16sqm extension.
 - Knock-through (with RSJ): strip out 4-6hrs, structural opening 6-10hrs, RSJ supply and fit 4-8hrs, making good 8-12hrs.
 - Garage conversion: insulation and boarding 12-20hrs, new door/window 4-6hrs, electrics (subcontract), plastering 8-14hrs, flooring 4-6hrs.
-Material price ranges: Bricks 350-550 per thousand, sand/cement 8-12/bag, RSJ beam 150-1500+ depending on size and span, PIR insulation board 25-45/sheet, plasterboard 7-12/sheet, ready-mix concrete 90-130/m3.
-Quirks: Always include skip hire if significant demolition (250-450 per skip, 2-week hire). Scaffold required for most two-storey work (500-2000 depending on duration). Long jobs: include weekly welfare/site costs if applicable. ALWAYS include this sentence at the end of the summary field for any extension, loft conversion, knock-through, or structural work: "Note: Building Control fees (approx 800-1500) and structural engineer or architect drawings (approx 500-1500) are not included and will be required separately."
+- Underpinning (per 1.2m bay): excavate 4-6hrs, pour concrete 2-3hrs, allow 24-48hrs cure before next bay. Structural engineer drawings required - flag always.
+- Damp proofing (DPC injection, average room): drill and inject 2-4hrs, re-plaster affected areas 4-8hrs (allow drying time). Materials: DPC cream 1-2 cartridges per linear metre.
+Material price ranges: Bricks 350-550 per thousand, facing bricks 600-1100 per thousand (mid-range 2026), sand/cement 8-12/bag, RSJ beam 150-1500+ depending on size and span, PIR insulation board 30-55/sheet depending on thickness, plasterboard 7-12/sheet, ready-mix concrete 110-150/m3.
+Quirks: Always include skip hire if significant demolition (250-450 per skip, 2-week hire). Scaffold required for most two-storey work (500-2000 depending on duration). Long jobs: include weekly welfare/site costs if applicable. Party Wall Agreement may be required for extensions within 3-6m of a neighbour boundary - flag this and note surveyor costs (800-2000). ALWAYS include this sentence at the end of the summary field for any extension, loft conversion, knock-through, or structural work: "Note: Building Control fees (approx 800-1500) and structural engineer or architect drawings (approx 500-1500) are not included and will be required separately."
 
 ── BRICKLAYER ──
-Common jobs: extensions, garden walls, pointing/repointing, rebuilding chimneys, piers, new builds.
+Common jobs: extensions, garden walls, pointing/repointing, rebuilding chimneys, piers, new builds, retaining walls, cavity wall tie replacement, brick slip cladding.
 Task breakdown examples:
 - Garden wall (10m x 1.8m, single skin): foundations (if needed) 4-8hrs, blockwork/brickwork 16-24hrs, coping 2-4hrs.
 - Repointing (20sqm): raking out 6-10hrs, repointing 8-14hrs.
 - Chimney rebuild: scaffold (allow separately or as line item), dismantling 4-6hrs, rebuilding 8-16hrs, flaunching and lead work 3-5hrs.
-Material price ranges: Facing bricks 500-900 per thousand, mortar/sand 7-10/bag, coping stones 8-20 per piece, DPC 1-2/m, lime mortar (for heritage work) 15-25/25kg bag.
-Quirks: Always ask about or state brick matching for extensions (matched bricks can be significantly more expensive or hard to source). Point out mortar colour matching for repointing. Scaffold cost should be noted if working above 2m.
-For repointing and small repair jobs, do NOT include skip hire unless the job is large scale (over 50sqm). Use a rubble bag allowance (50-80) instead for small repointing jobs.
+- Retaining wall (10m x 1m, block): excavate and foundation 4-8hrs, blockwork 10-16hrs, backfill and drainage 3-5hrs.
+- Cavity wall tie replacement (average 3-bed semi): survey 1-2hrs, drill and insert new ties 8-16hrs, make good drill holes 2-4hrs. Specialist job - always flag structural engineer sign-off recommended.
+Material price ranges: Facing bricks 600-1100 per thousand (mid-range 2026), mortar/sand 7-10/bag, coping stones 8-20 per piece, DPC 1-2/m, lime mortar (for heritage work) 15-25/25kg bag, cavity wall ties 0.50-2 each.
+Quirks: Brick matching for repairs or extensions in older properties can add significant cost and lead time - always flag this. Historic brick suppliers may charge 3-5x standard prices. Mortar colour matching for repointing is critical - always note this. Scaffold cost should be noted if working above 2m. For repointing and small repair jobs, do NOT include skip hire unless the job is large scale (over 50sqm). Use a rubble bag allowance (50-80) instead for small repointing jobs.
 
 ── GROUNDWORKER ──
-Common jobs: drainage, foundations, excavation, concrete slabs, driveways, retaining walls.
+Common jobs: drainage, foundations, excavation, concrete slabs, driveways, retaining walls, soakaways, French drains, petrol interceptors.
 Task breakdown examples:
 - New concrete slab (50sqm, 150mm): excavation 8-12hrs, hardcore fill and compact 4-6hrs, DPM and mesh 2-3hrs, concrete pour 4-6hrs, finishing 4-6hrs.
 - Drainage run (20m, new foul drain): setting out and excavation 6-10hrs, laying and jointing 4-6hrs, backfill and reinstatement 3-5hrs, testing 1-2hrs.
 - Strip foundations for extension (4x4m): setting out 1-2hrs, excavation 6-12hrs, shuttering 2-4hrs, pour and finish 4-6hrs.
-Material price ranges: Ready-mix concrete 90-130/m3, hardcore/MOT Type 1 30-50/tonne, sand 25-40/tonne, drainage pipe (110mm) 6-10/m, inspection chambers 80-200 each, DPM membrane 0.50-1.50/sqm.
-Quirks: Always note that ground conditions can affect price significantly (rock, high water table, contaminated ground). Disposal of excavated material should be included as a separate line (tipper hire + tip fees 150-400 per load). Plant hire (mini-digger 200-350/day) is a separate line.
+- Soakaway installation (standard, 1m3 crate): excavate 2-4hrs, lay geotextile membrane 1hr, install crate and connect drain 2-3hrs, backfill 1-2hrs. Note: soakaway must be minimum 5m from building and 2.5m from boundary. Percolation test recommended first.
+- French drain (20m run): excavate trench 4-6hrs, lay geotextile and perforated pipe 2-3hrs, backfill with gravel 2-3hrs.
+- Driveway base preparation (40sqm): excavate 200mm 6-10hrs, lay and compact MOT Type 1 4-6hrs, edge restraints 2-3hrs. Surface finish is separate (block paving, tarmac, gravel etc).
+Material price ranges: Ready-mix concrete 110-150/m3, hardcore/MOT Type 1 30-50/tonne, sand 25-40/tonne, drainage pipe (110mm) 6-10/m, inspection chambers 80-200 each, DPM membrane 0.50-1.50/sqm, soakaway crate 80-150 each, perforated pipe (100mm) 3-6/m, geotextile membrane 1-3/m2.
+Quirks: Always note that ground conditions can affect price significantly (rock, high water table, contaminated ground). Disposal of excavated material should be included as a separate line (tipper hire + tip fees 200-500 per load). Plant hire (mini-digger 250-400/day) is a separate line. Driveways over 5sqm to a highway may require planning permission if not permeable surface - flag this.
 
 ── PLASTERER ──
-Common jobs: full re-plaster, patch repairs, dot and dab boarding, artex removal, skimming, coving.
+Common jobs: full re-plaster, patch repairs, dot and dab boarding, artex removal, skimming, coving, external render, K-rend, monocouche.
 Task breakdown examples:
 - Full room re-plaster (average bedroom, 40sqm walls): hack off 3-5hrs, apply bonding coat 3-4hrs, finish skim 4-6hrs. Allow 3-4hrs drying time between coats (not billable).
 - Dot and dab boarding (40sqm): fix boards 4-6hrs, tape and fill joints 2-3hrs, skim 4-6hrs.
 - Patch repair (1sqm): cut out and key 0.5hr, undercoat and skim 1-2hrs.
 - Artex removal (average room ceiling): test for asbestos first (flag this), chemical treatment and scrape 4-8hrs, skim 3-5hrs.
-Material price ranges: Bonding coat 12-16/25kg bag, finish plaster 10-14/25kg bag, plasterboard (12.5mm standard) 7-12/sheet, beading 1-3 per length, PVA 8-14/5L.
-Quirks: Always flag artex asbestos risk if pre-2000 property (testing 50-150 extra, removal if positive is a specialist job entirely separate). New plaster must dry before decorating (typically 4-6 weeks). Rooms with lots of angles and reveals take significantly longer. Skip hire for a full re-plaster: 6-8 yard skip is appropriate for plaster waste. Price at 350-500 for a standard 2 week hire outside London, not higher.
+- External render - K-rend or monocouche (20sqm): prep surface and bead up 2-4hrs, scratch coat 4-6hrs, finish/texture coat 4-6hrs. Total per 20sqm 10-16hrs. Materials: basecoat render 12-18/bag, K-rend or monocouche 35-55/bag (covers approx 4-5sqm per bag at 15mm). Always include stop beads and corner beads as a line item.
+- External sand and cement render (20sqm): prep and bead up 2-3hrs, scratch coat 3-5hrs, finish coat 3-5hrs.
+Material price ranges: Bonding coat 12-16/25kg bag, finish plaster 10-14/25kg bag, plasterboard (12.5mm standard) 7-12/sheet, beading 1-3 per length, PVA 8-14/5L, K-rend/monocouche 35-55/bag, sand/cement render 8-12/bag, Limelite/renovating plaster 18-28/bag.
+Quirks: Always flag artex asbestos risk if pre-2000 property (testing 50-150 extra, removal if positive is a specialist job entirely separate). New plaster must dry before decorating (typically 4-6 weeks). Rooms with lots of angles and reveals take significantly longer. Skip hire for a full re-plaster: 6-8 yard skip is appropriate for plaster waste. Price at 350-500 for a standard 2 week hire outside London, not higher. For properties with damp issues, standard plaster is unsuitable - use renovating plaster (Limelite or similar) and flag damp treatment must be done first. External K-rend requires primer on the substrate - always include as a line item.
 
 ── PLUMBER ──
-Common jobs: bathroom installation, boiler service/replacement, leak repairs, new radiators, pipework alterations, kitchen plumbing.
+Common jobs: bathroom installation, boiler service/replacement, leak repairs, new radiators, pipework alterations, kitchen plumbing, outside taps, unvented cylinders, macerators, water softeners, underfloor heating.
 Task breakdown examples:
 - Full bathroom installation (remove and replace): strip out 4-6hrs, first fix pipework 8-12hrs, second fix (fit suite, shower, taps) 8-12hrs, test and commission 1-2hrs. Total plumbing: 22-32hrs.
 - Boiler swap (like-for-like): remove and disconnect old 1-2hrs, fit new boiler 3-4hrs, commission and gas safe certificate 1hr. Total 5-7hrs maximum for a straightforward like-for-like swap. Do not exceed 8hrs labour for a standard like-for-like boiler swap.
 - Single radiator addition: run pipe from nearest point 2-4hrs, fit radiator and TRV 1hr, drain down and refill system 1hr.
 - Leak trace and repair: call-out 1hr minimum, trace and repair varies (1-4hrs typical).
 - Moving radiators (per radiator, straightforward same-room move): disconnect and cap 0.5hrs, run new pipework to new position 1-1.5hrs, refit and reconnect 0.5hrs. Total per radiator: 2-2.5hrs. For 2 radiators allow 4-5hrs total labour including drain down and refill.
+- Outside tap installation (new, from nearest cold supply): run pipework through wall 1-2hrs, fit tap and double check valve/backflow preventer 0.5-1hr. Total 1.5-3hrs. Materials: outside tap 15-40, pipe and fittings 20-40, wall plate elbow 5-10. ALWAYS include a double check valve - required by Water Regulations.
+- Unvented cylinder replacement (like-for-like): drain down and remove old 1-2hrs, fit and connect new cylinder 3-4hrs, commission and pressure test 1hr. Total 5-7hrs. G3 qualification required - flag this. Notify Building Regs. Cylinder supply 500-900 mid-range.
+- Macerator / Saniflo installation: fit WC and connect to macerator unit 2-4hrs, run discharge pipe to soil stack 1-3hrs, electrical connection (allow for separate electrician if needed) 0.5hr. Total plumbing: 3-7hrs. Macerator unit supply 300-600.
+- Water softener installation: locate suitable position 0.5hr, bypass valve and pipework 1-2hrs, connect to drain 0.5-1hr, commission and set 0.5hr. Total 2.5-4hrs. Unit supply 400-1500 depending on spec.
 Material price ranges: Copper pipe (22mm) 4-7/m, plastic push-fit (22mm) 3-5/m, standard radiator 80-250 depending on size, combi boiler (mid-range) 700-1200 supply, shower enclosure (mid) 300-800, basin and pedestal 80-250, close-coupled WC 100-280. Magnetic filter (Magnaclean or equivalent) 80-120 supply - include on all boiler replacement quotes as standard.
-Quirks: ALWAYS include call-out charge for small jobs (40-80 minimum, sometimes 1 hour minimum charge). Gas work must be Gas Safe registered - flag this on any gas line items. Boiler work requires Building Regs notification. Pressure testing and commissioning is a separate line item. Drain-down and refill for system work takes time and should be priced.
+Quirks: ALWAYS include call-out charge for small jobs (40-80 minimum, sometimes 1 hour minimum charge). Gas work must be Gas Safe registered - flag this on any gas line items. Boiler work requires Building Regs notification. Pressure testing and commissioning is a separate line item. Drain-down and refill for system work takes time and should be priced. Unvented cylinder work requires G3 qualification - always flag.
 
 ── ELECTRICIAN ──
-Common jobs: consumer unit (fuse board) upgrade, extra sockets/lights, rewires, EV charger installation, security lighting, bathroom extract fan.
+Common jobs: consumer unit upgrade, extra sockets/lights, rewires, EV charger installation, security lighting, bathroom extract fan, outbuilding supply, EICR condition reports, solar PV.
 Task breakdown examples:
 - Consumer unit upgrade (16-way): isolate and disconnect old 1-2hrs, fit and connect new CU 3-5hrs, test and certify 2-3hrs. Total 6-10hrs.
 - Full rewire (3-bed house): first fix (cables) 3-5 days (24-40hrs), second fix (accessories) 1.5-2.5 days (12-20hrs), test and certify 6-10hrs. Total 42-70hrs.
 - Extra double socket (close to existing): route and drop cable 1-2hrs, fit back box and socket 0.5hr.
-- EV charger installation: survey and agree location 0.5hr, run supply cable 2-4hrs, fit charger unit 1-2hrs, test and commission 0.5hr, DNO notification if required.
+- EV charger installation: survey and agree location 0.5hr, run supply cable 2-4hrs, fit charger unit 1-2hrs, test and commission 0.5hr, DNO notification if required. Note: if supply upgrade needed, DNO application can take 6-12 weeks - always flag to client.
 - Bathroom fan: run cable 1-2hrs, fit fan 0.5hr.
-Material price ranges: Consumer unit (mid-range 16-way) 120-220, cable (2.5mm twin and earth) 1-2/m, sockets and switches (standard white) 5-15 each, LED downlights 10-25 each, EV charger unit (mid-range) 500-900, smoke alarms 15-40 each.
-Quirks: Electricians often price by the POINT not by the hour for fit-out work. A point = one socket, one light fitting, one switch position. Typical rates: 40-80 per point in non-London areas, 80-120 per point in London. Always include Electrical Installation Certificate (EIC) or Minor Works Certificate cost. Test and inspection (EICR) for a whole property is 150-400. Notifiable work requires Building Regs notification (self-certification as Part P registered covers this). Large rewires: plaster making good is a separate trade and should be flagged.
+- Outbuilding / shed supply (from house CU, up to 20m run): trench or route overhead cable 2-4hrs, install sub-board in outbuilding 2-3hrs, connect circuits and test 1-2hrs. Total 5-9hrs. Always use SWA armoured cable for underground runs. Include RCD protection in sub-board. Note: method (underground vs overhead) affects materials cost significantly.
+- EICR (Electrical Installation Condition Report): 1-bed flat 2-3hrs, 2-bed house 3-4hrs, 3-bed house 4-6hrs, 4-bed+ 6-8hrs. Includes visual inspection, testing all circuits, written report with coding. Remedial works quoted separately if C1 or C2 issues found.
+- Solar PV installation (10-panel system): design and survey 2-4hrs, scaffold (separate line), fix rails and panels 6-10hrs, DC wiring 3-5hrs, inverter and AC connection 2-4hrs, DNO notification and commissioning 2-3hrs. Note: MCS accreditation required for Feed-in Tariff / SEG eligibility - flag this.
+Material price ranges: Consumer unit (mid-range 16-way) 120-220, cable (2.5mm twin and earth) 1-2/m, SWA armoured cable (6mm 3-core) 4-8/m, sockets and switches (standard white) 5-15 each, LED downlights 10-25 each, EV charger unit (mid-range) 500-900, smoke alarms 15-40 each, solar panel (400W) 100-180 each, inverter (mid-range, 3.6kW) 600-1000.
+Quirks: Electricians often price by the POINT not by the hour for fit-out work. A point = one socket, one light fitting, one switch position. Typical rates: 40-80 per point in non-London areas, 80-120 per point in London. Always include Electrical Installation Certificate (EIC) or Minor Works Certificate cost. Test and inspection (EICR) for a whole property is 150-400. Notifiable work requires Building Regs notification (self-certification as Part P registered covers this). Large rewires: plaster making good is a separate trade and should be flagged. Solar PV requires MCS accreditation - flag if unsure.
 
 ── GAS ENGINEER ──
-Common jobs: boiler service, boiler replacement, new central heating system, air conditioning (split system), underfloor heating, gas fire installation.
+Common jobs: boiler service, boiler replacement, new central heating system, power flush, air conditioning (split system), underfloor heating, gas fire installation, landlord gas safety certificates.
 Task breakdown examples:
 - Annual boiler service: inspect, clean, test, flue check 1-1.5hrs.
 - Full central heating system (new build, 3-bed): design and materials procurement (allow separately), first fix pipework 16-24hrs, fit radiators and TRVs 8-12hrs, fit boiler and cylinder if needed 6-10hrs, commission and balance system 4-6hrs, certify and hand over 1-2hrs. Total 35-54hrs.
+- Power flush (existing heating system): connect flush machine 1hr, flush all circuits 4-8hrs depending on system size and number of radiators, treat with inhibitor and refill 1hr. Total 6-10hrs. Materials: flushing chemical and inhibitor 40-80. Systems with 10+ radiators take longer. Always recommend fitting a magnetic filter after power flush - include as standard line item.
 - Air conditioning (single split system, 1 unit): survey and agree position 0.5hr, line set installation 2-4hrs, internal and external unit installation 3-5hrs, commission and gas check 1-2hrs.
 - Underfloor heating (wet system, per room): manifold connection 1-2hrs, lay pipe circuit 2-4hrs per room, pressure test 0.5hr, commission 0.5hr.
-Material price ranges: Combi boiler (mid-range) 700-1200, system boiler 800-1400, unvented cylinder 600-1200, radiators 80-300 each, TRVs 15-40 each, split AC unit (mid-range, supply only) 600-1500, UFH pipe (per m) 1-2, UFH manifold 200-500.
-Quirks: ALL gas work must be completed by a Gas Safe registered engineer. This must be stated. Landlord Gas Safety Record (CP12) is a separate certificate 60-100. F-Gas qualified engineer required for refrigerant handling in AC systems. Commissioning and certification is a separate billable item. Always include a line for commissioning report/certificate. Boiler manufacturer warranty may require professional installation - note this.
+- Landlord Gas Safety Record (CP12): inspect all gas appliances and pipework, test 1-1.5hrs. Certificate issued same day. Price 60-100.
+Material price ranges: Combi boiler (mid-range) 700-1200, system boiler 800-1400, unvented cylinder 600-1200, radiators 80-300 each, TRVs 15-40 each, split AC unit (mid-range, supply only) 600-1500, UFH pipe (per m) 1-2, UFH manifold 200-500, magnetic filter (Magnaclean or similar) 80-120.
+Quirks: ALL gas work must be completed by a Gas Safe registered engineer. This must be stated on every gas quote. Landlord Gas Safety Record (CP12) is a separate certificate 60-100. F-Gas qualified engineer required for refrigerant handling in AC systems. Commissioning and certification is a separate billable item. Always include a line for commissioning report/certificate. Boiler manufacturer warranty may require professional installation - note this. Power flush is strongly recommended before fitting a new boiler on an existing system - always suggest as an add-on.
 
 ── ROOFER ──
-Common jobs: full re-roof, felt and batten replacement, new flat roof, repointing ridge/verge, replacing broken tiles, leadwork, fascias/soffits/guttering.
+Common jobs: full re-roof, felt and batten replacement, new flat roof, repointing ridge/verge, replacing broken tiles, leadwork, fascias/soffits/guttering, Velux windows, chimney removal.
 Task breakdown examples:
 - Full re-roof (3-bed semi, approx 60sqm): scaffold (allow separately 600-1500), strip existing 4-8hrs, renew felt and batten 6-10hrs, re-tile or slate 16-30hrs, repoint ridge 2-4hrs, replace any flashings 2-4hrs.
 - Flat roof replacement (GRP, 20sqm): strip existing felt 2-4hrs, check/replace decking 2-4hrs, prime and lay GRP 4-8hrs, trim and seal outlets 1-2hrs.
 - Fascia and soffit replacement (semi-detached): scaffold or tower allow, remove old timber 4-6hrs, fit new UPVC fascia/soffit 6-10hrs, refit guttering 2-3hrs.
 - Pointing ridge and verge (end of terrace): scaffold, hack out old mortar 2-4hrs, repoint 3-6hrs.
-Material price ranges: Concrete roof tiles 45-80/sqm supply, natural slate 80-150/sqm supply, GRP flat roofing kit 40-80/sqm supply, EPDM rubber 15-30/sqm supply, lead flashing (code 4) 30-50/sqm, UPVC fascia 3-8/m, UPVC guttering 5-12/m.
-Quirks: SCAFFOLD is almost always required for roof work and should always be a separate line item (600-1500 for a typical 2-3 week hire on a semi, 2000-3500 for larger or more complex properties). Scaffold costs can dominate small roof jobs. Asbestos cement roofing sheets require specialist removal - flag this. Felt under tiles/slates must be noted as breathable or non-breathable (non-breathable older felt increases condensation risk - flag). ALWAYS include a guttering replacement line item on any full re-roof quote. Supply and fit UPVC guttering to a semi-detached is typically 4-6hrs labour plus 80-150 materials. Building Regs may apply if structural changes.
+- Velux / roof window installation (single unit, existing pitched roof): cut opening and form trimmer 2-3hrs, fit window and flash with lead or EW kit 2-4hrs, make good internally 1-2hrs. Total 5-9hrs. Velux window supply 300-800 depending on size. Always include flashing kit as separate line item - do not assume it is included with the window.
+- Chimney removal (full removal to below roofline): scaffold, strip flashing and lead 1-2hrs, dismantle chimney stack 4-8hrs, make good roof and felt 2-4hrs, make good internal ceiling 2-4hrs (or allow for separate plasterer). Rubble removal separate line.
+Material price ranges: Concrete roof tiles 45-80/sqm supply, natural slate 80-150/sqm supply, GRP flat roofing kit 40-80/sqm supply, EPDM rubber 15-30/sqm supply, lead flashing (code 4) 30-50/sqm, UPVC fascia 3-8/m, UPVC guttering 5-12/m, Velux window (mid-range) 300-800 supply.
+Quirks: SCAFFOLD is almost always required for roof work and should always be a separate line item (600-1500 for a typical 2-3 week hire on a semi, 2000-3500 for larger or more complex properties). Scaffold costs can dominate small roof jobs. Asbestos cement roofing sheets require specialist removal - flag this and do not price it as standard roofing work. Felt under tiles/slates must be noted as breathable or non-breathable (non-breathable older felt increases condensation risk - flag). ALWAYS include a guttering replacement line item on any full re-roof quote. Supply and fit UPVC guttering to a semi-detached is typically 4-6hrs labour plus 80-150 materials. Building Regs may apply if structural changes.
 
 ── JOINER / CARPENTER ──
-Common jobs: stud walls, door hanging, skirting/architrave, fitted wardrobes, kitchen fitting, stairs, loft hatch, decking, fencing, timber frame.
+Common jobs: stud walls, door hanging, skirting/architrave, fitted wardrobes, kitchen fitting, stairs, loft hatch, loft boarding, decking, fencing, bi-fold doors, garden gates.
 Task breakdown examples:
 - Stud wall (3m x 2.4m partition): set out and sole plate 1hr, frame 2-3hrs, noggins and dwangs 0.5hr, board one side 2hrs, insulate 1hr, board second side 1.5hrs, tape and fill (allow for plasterer) separate.
 - Door hanging (new door, existing frame): trim and fit door 1-2hrs, fit hardware 0.5-1hr.
 - Fitted wardrobe (3m wide, floor to ceiling): design and measure 1hr, cut and assemble carcasses 4-8hrs, fit to room 2-4hrs, fit doors and hardware 2-3hrs.
 - Decking (20sqm, softwood, ground level): set out and posts 3-4hrs, bearers and joists 4-6hrs, decking boards 6-8hrs, edging and steps 2-4hrs.
 - Fencing (20m, closeboard): post holes (auger or manual) 3-6hrs, set posts in concrete 2-3hrs, fit rails and boards 6-10hrs, treat and cap 1hr.
-Material price ranges: CLS stud timber (89x38) 2-4/m, plasterboard (12.5mm) 7-12/sheet, internal door (mid-range) 60-180, architrave/skirting 1-4/m, decking board (softwood 150mm) 3-6/m, fence post 8-18 each, closeboard panel material 15-35/m run.
-Quirks: Kitchen fitting usually excludes plumbing and electrics (these are separate trades - flag). Stairs require structural knowledge and Building Regs compliance. Always note whether a stud wall requires Building Regs (habitable room division, fire rating). Fitted wardrobes: bespoke vs flat-pack assembly has very different labour times. Fire doors (FD30) required in certain positions in houses - flag when hanging internal doors.
+- Loft boarding (standard 3-bed semi, approx 15sqm usable area): fit loft legs or risers to raise boards above insulation 2-3hrs, lay and fix boarding 2-3hrs, fit loft hatch and loft ladder 1-2hrs. Total 5-8hrs. Materials: loft legs 60-100, boarding (18mm OSB or specialist loft board) 200-350, loft ladder (mid-range) 150-400 supply.
+- Bi-fold door installation (2.4m wide, 3-panel, pre-hung set): prepare and form opening (if not already done) 1-2hrs, fit frame and threshold 1-2hrs, hang and adjust doors 2-3hrs, fit hardware and draught seals 1hr. Total 5-8hrs. Note: structural lintel usually required if new opening - allow for builder or structural engineer.
+Material price ranges: CLS stud timber (89x38) 2-4/m, plasterboard (12.5mm) 7-12/sheet, internal door (mid-range) 60-180, architrave/skirting 1-4/m, decking board (softwood 150mm) 3-6/m, fence post 8-18 each, closeboard panel material 15-35/m run, bi-fold door set (mid-range, per m2) 200-500, loft boarding (per sheet) 15-30.
+Quirks: Kitchen fitting usually excludes plumbing and electrics (these are separate trades - flag). Stairs require structural knowledge and Building Regs compliance. Always note whether a stud wall requires Building Regs (habitable room division, fire rating). Fitted wardrobes: bespoke vs flat-pack assembly has very different labour times. Fire doors (FD30) required in certain positions in houses - flag when hanging internal doors. Bi-fold and large sliding doors often need a structural engineer to confirm lintel size if a new opening is being formed.
 
 ── TILER ──
-Common jobs: bathroom wall tiling, floor tiling, kitchen splashback, outdoor paving, wet room.
+Common jobs: bathroom wall tiling, floor tiling, kitchen splashback, outdoor paving, wet room, underfloor heating under tiles.
 Task breakdown examples:
 - Bathroom wall tiling (full room, 20sqm): prep walls (board or skim, allow separately if needed), set out and fix tiles 8-14hrs, grouting 2-3hrs, silicone seals 1hr.
 - Floor tiling (20sqm, standard ceramic): prep floor 1-2hrs, prime and adhesive 4-6hrs, lay and level tiles 6-10hrs, grout 2-3hrs.
 - Kitchen splashback (3m run): set out and fix 2-3hrs, grout and seal 1hr.
 - Large format tile (600x600+): takes 20-30% longer than standard - allow for more prep and spacer time.
 - Wet room: waterproofing membrane is critical and must be a separate line item. Set out drain 1-2hrs, apply tanking 2-4hrs, tile floor and walls separately.
-Material price ranges: Standard ceramic wall tile 8-20/sqm, porcelain floor tile 15-35/sqm, large format porcelain 25-60/sqm, luxury vinyl tile (LVT) 20-45/sqm, tile adhesive 10-18/20kg bag, grout 5-10/3kg, waterproofing membrane 15-30/sqm, flexible silicone 4-8/tube.
-Quirks: Tile waste should always be included (10% for regular rooms, 15-20% for rooms with lots of cuts). Preparation of substrate is critical - note if walls are uneven and need boarding or skimming first (separate trade). Pattern matching (herringbone, chevron, feature wall) adds 20-40% to labour time. Underfloor heating under tiles requires a decoupling membrane and specific adhesive - flag and price separately.
+- Underfloor heating under tiles (electric mat, per 10sqm): lay mat and connect thermostat 2-3hrs, install decoupling membrane (Ditra or similar) 1-2hrs, tile over as standard. Decoupling membrane required 15-25/sqm - always include. Do not tile directly onto electric mat without membrane.
+Material price ranges: Standard ceramic wall tile 8-20/sqm, porcelain floor tile 15-35/sqm, large format porcelain 25-60/sqm, luxury vinyl tile (LVT) 20-45/sqm, tile adhesive 10-18/20kg bag, grout 5-10/3kg, waterproofing membrane/tanking kit 15-30/sqm, flexible silicone 4-8/tube, decoupling membrane (Ditra) 15-25/sqm.
+Quirks: Tile waste should always be included (10% for regular rooms, 15-20% for rooms with lots of cuts). Preparation of substrate is critical - note if walls are uneven and need boarding or skimming first (separate trade). Pattern matching (herringbone, chevron, feature wall) adds 20-40% to labour time. Underfloor heating under tiles requires a decoupling membrane and flexible adhesive - always flag and price separately. Never tile directly onto a heated mat without membrane.
 
 ── PAINTER AND DECORATOR ──
-Common jobs: full interior redecoration, single room, exterior painting, woodwork, wallpapering, rendering paint.
+Common jobs: full interior redecoration, single room, exterior painting, woodwork, wallpapering, rendering paint, UPVC spraying.
 Task breakdown examples:
 - Full room redecoration (average bedroom, walls, ceiling, woodwork): fill and sand 1-2hrs, mist coat 0.5hr, two coats walls and ceiling 4-6hrs, gloss/satin woodwork 2-3hrs. Total 8-12hrs including prep.
 - Exterior of semi-detached: scaffold or access (allow separately), prepare and clean down 4-8hrs, masonry paint two coats (walls) 8-16hrs, prep and paint fascias, soffits, windows and doors 8-14hrs. Total 20-38hrs.
 - Wallpapering (per roll): cutting and pasting 0.5-1hr per roll, hanging and trimming 0.5-1hr per roll. Paste-the-wall papers slightly faster.
 - Bare new plaster: must wait 4-6 weeks minimum before full decoration. Mist coat (thinned emulsion) is first coat - flag this to client.
-Material price ranges: Emulsion paint (mid-range, 5L) 18-35, masonry paint (10L) 25-50, undercoat (2.5L) 15-25, gloss/satin (2.5L) 15-30, wallpaper (mid-range, per roll) 15-60, paste 5-12/pack, filler 5-10, primer 12-20.
-Quirks: Paint coverage varies - one 5L tin covers approximately 50-65sqm for one coat (less on rough/absorbent surfaces). Always price for 2 coats minimum on walls. Bare wood needs primer, undercoat, and two finish coats. New plaster: mist coat first, then two finish coats. Exterior: always assess existing paint adhesion - peeling paint needs significant prep. High access work (over 3m) needs scaffold or MEWP - flag this.
+- UPVC window and door spraying (semi-detached, approx 8 windows and 2 doors): clean and degrease all surfaces 2-3hrs, mask up glass and surrounding areas 2-3hrs, apply specialist UPVC primer 1-2hrs, spray 2 finish coats 3-5hrs, de-mask and clean down 1hr. Total 9-14hrs. Materials: UPVC primer and paint 80-150. Access equipment needed for upper floor windows - include as line item. Note: must use specialist UPVC-rated paint system, not standard masonry or wood paint.
+Material price ranges: Emulsion paint (mid-range, 5L) 18-35, masonry paint (10L) 25-50, undercoat (2.5L) 15-25, gloss/satin (2.5L) 15-30, wallpaper (mid-range, per roll) 15-60, paste 5-12/pack, filler 5-10, primer 12-20, UPVC primer/paint system 80-150.
+Quirks: Paint coverage varies - one 5L tin covers approximately 50-65sqm for one coat (less on rough/absorbent surfaces). Always price for 2 coats minimum on walls. Bare wood needs primer, undercoat, and two finish coats. New plaster: mist coat first, then two finish coats. Exterior: always assess existing paint adhesion - peeling paint needs significant prep. High access work (over 3m) needs scaffold or MEWP - flag this. UPVC spraying must use dedicated UPVC paint systems - standard paint will peel.
 
 ── LANDSCAPER ──
-Common jobs: garden design and build, lawn laying (turf or seed), patio/decking, fencing, raised beds, driveway, tree work, drainage.
+Common jobs: garden design and build, lawn laying (turf or seed), patio/decking, fencing, raised beds, driveway, tree work, drainage, artificial grass installation, water features.
 Task breakdown examples:
 - New turf lawn (50sqm): clear and strip existing 3-4hrs, rotovate and level 3-5hrs, topsoil if needed 2-3hrs, lay turf 4-6hrs, roll and water 1hr.
 - Patio (20sqm, porcelain on sand/cement): excavate 4-6hrs, MOT base layer 3-4hrs, sand/cement bed 3-4hrs, lay and level slabs 8-14hrs, point joints 3-5hrs.
 - Raised bed (timber, 2m x 1m): cut and assemble 2-3hrs, line and fill 1-2hrs.
 - Fencing (20m, closeboard): same as joiner rates.
 - Tree stump removal: small (under 20cm) 1-2hrs, medium (20-40cm) 2-4hrs, large (over 40cm) 4-8hrs. Stump grinder hire 150-300/day.
-Material price ranges: Turf 3-6/sqm supply, topsoil 35-60/tonne, paving slabs (mid-range) 25-60/sqm supply, porcelain paving 40-90/sqm supply, MOT Type 1 30-50/tonne, bark mulch 30-50/m3, railway sleepers 20-60 each, timber decking board 3-6/m.
-Quirks: Skip hire is almost always needed for landscaping (250-450). Topsoil and turf quantities need to account for levels - if garden slopes, excavation spoil removal or retaining structures needed. Porcelain paving requires a more precise bed than sandstone - takes longer. Driveways over 5sqm may require planning permission if not permeable (flag this). Tree work over certain height may require Council permission (TPOs, conservation areas) - flag.
+- Artificial grass installation (50sqm): remove existing lawn and excavate 100mm 3-5hrs, lay and compact MOT base 3-5hrs, lay sharp sand bedding layer 2-3hrs, roll out and cut artificial grass 3-5hrs, fix perimeter with nails/adhesive and join seams 1-2hrs, brush in kiln sand or rubber crumb 1hr. Total 13-21hrs. Materials: artificial grass 15-40/sqm supply (quality varies significantly), MOT Type 1 30-50/tonne, kiln dried sand 1-2/kg, weed membrane 1-2/sqm. Note: quality of grass and pile height affects price significantly - always agree spec with client first.
+- Sleeper retaining wall (10m x 0.6m, 2 courses): excavate and compact base 3-5hrs, lay and fix sleepers 4-8hrs, backfill and compact 2-3hrs.
+Material price ranges: Turf 3-6/sqm supply, topsoil 35-60/tonne, paving slabs (mid-range) 25-60/sqm supply, porcelain paving 40-90/sqm supply, MOT Type 1 30-50/tonne, bark mulch 30-50/m3, railway sleepers 20-60 each, timber decking board 3-6/m, artificial grass 15-40/sqm.
+Quirks: Skip hire is almost always needed for landscaping (250-450). Topsoil and turf quantities need to account for levels - if garden slopes, excavation spoil removal or retaining structures needed. Porcelain paving requires a more precise bed than sandstone - takes longer. Driveways over 5sqm to a highway may require planning permission if not permeable (flag this). Tree work over certain height or near protected trees may require Council permission (TPOs, conservation areas) - always flag. Artificial grass quality varies enormously - always agree pile height and spec with client before quoting.
 
 ════════════════════════════════════════
 OUTPUT FORMAT RULES
@@ -209,6 +234,7 @@ CRITICAL JSON RULES:
 - All numeric fields must be plain numbers only
 - Keep description text simple, avoid special characters
 - jobRef must be BQ- followed by 4 random digits, e.g. BQ-3847`;
+
 const TRADES = [
   "Bricklayer",
   "Electrician",

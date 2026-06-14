@@ -1512,7 +1512,7 @@ export default function App() {
       return;
     }
     const labourLine = quoteLabourRate
-      ? `Labour rate: GBP${quoteLabourRate} per hour - use this exact rate for ALL labour line items.\n${estimatedHours ? `Total labour hours for this job: ${estimatedHours} hours - use this exact figure for the total labour quantity.\n` : ""}`
+      ? `OVERRIDE — Labour rate: £${quoteLabourRate}/hr. You MUST use this exact figure for every labour line item. Ignore all labour rate ranges in your instructions.\n${estimatedHours ? `Total labour hours for this job: ${estimatedHours} hours - use this exact figure for the total labour quantity.\n` : ""}`
       : "";
     const materialsLine = materialsHints ? `Specific materials or parts with known prices (use these exact figures):\n${materialsHints}\n` : "";
     const tradeLine = tradeType ? `Trade: ${tradeType}\n` : "";

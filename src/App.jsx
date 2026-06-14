@@ -25,9 +25,9 @@ LABOUR RATE RANGES (base, non-London)
 - Bricklayer: 28-38/hr
 - Groundworker: 25-35/hr
 - Plasterer: 28-38/hr
-- Plumber: 40-55/hr
-- Electrician: 45-60/hr
-- Gas Engineer: 45-60/hr
+-Plumber: 45-65/hr
+-Electrician: 50-70/hr
+-Gas Engineer: 50-70/hr
 - Roofer: 30-45/hr
 - Joiner / Carpenter: 28-40/hr
 - Tiler: 25-35/hr

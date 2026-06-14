@@ -102,7 +102,7 @@ Quirks: ALWAYS include call-out charge for small jobs (40-80 minimum, sometimes 
 Common jobs: consumer unit (fuse board) upgrade, extra sockets/lights, rewires, EV charger installation, security lighting, bathroom extract fan.
 Task breakdown examples:
 - Consumer unit upgrade (16-way): isolate and disconnect old 1-2hrs, fit and connect new CU 3-5hrs, test and certify 2-3hrs. Total 6-10hrs.
-- Full rewire (3-bed house): first fix (cables) 2-4 days (16-32hrs), second fix (accessories) 1-2 days (8-16hrs), test and certify 4-8hrs. Total 28-56hrs.
+- Full rewire (3-bed house): first fix (cables) 3-5 days (24-40hrs), second fix (accessories) 1.5-2.5 days (12-20hrs), test and certify 6-10hrs. Total 42-70hrs.
 - Extra double socket (close to existing): route and drop cable 1-2hrs, fit back box and socket 0.5hr.
 - EV charger installation: survey and agree location 0.5hr, run supply cable 2-4hrs, fit charger unit 1-2hrs, test and commission 0.5hr, DNO notification if required.
 - Bathroom fan: run cable 1-2hrs, fit fan 0.5hr.

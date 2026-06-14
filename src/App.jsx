@@ -33,7 +33,7 @@ LABOUR RATE RANGES (base, non-London)
 - Tiler: 25-35/hr
 - Painter and Decorator: 20-30/hr
 - Landscaper: 20-30/hr
-Always price at lower-to-mid end of ranges so tradesmen can adjust upward.
+Price at the mid point of all ranges. Do not underquote — tradesmen can edit any figure after generation. An accurate mid-market quote is more useful than a conservative one.
 If the user provides their own labour rate, use that EXACT rate for ALL labour lines.
 If the user provides estimated hours, use that EXACT figure for total labour quantity.
 

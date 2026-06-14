@@ -177,7 +177,7 @@ OUTPUT FORMAT RULES
 ════════════════════════════════════════
 - Use categories (Labour, Materials, Plant and Equipment, Preliminaries, Scaffold, Disposal/Waste) to organise line items
 - For multi-trade jobs, use the trade name as the category (e.g. Plumbing, Electrical, Plastering)
-- Materials markup: tradesmen typically add 15-25% to trade material costs to cover procurement, delivery, and handling time. Apply this when pricing materials unless the user has provided exact known prices.
+- Materials markup: apply 20% to all trade material costs as standard to cover procurement, delivery and handling. Only deviate if the user has provided exact known prices.
 - The summary field should include a 1-sentence professional scope description, then note: Rates based on [region if stated] - adjust labour rates and material costs to reflect your actual supplier pricing and local market.
 - Never make the quote look padded - only include line items that are genuinely part of the job
 - If CIS is mentioned: do not adjust labour rates. CIS deduction is shown separately on the quote. Note: VAT domestic reverse charge may apply for VAT-registered subcontractors under CIS - recommend client checks with their accountant.
